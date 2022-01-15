@@ -18,7 +18,7 @@ export const AboutContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 2;
   }
 `;
@@ -57,11 +57,11 @@ export const AboutH1 = styled.h1`
   color: #fff;
   font-size: 2rem;
   text-align: center;
-
+  
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
   }
-
+  
   @media screen and (max-width: 480px) {
     font-size: 1.2rem;
   }
@@ -81,7 +81,7 @@ export const AboutH2 = styled.h2`
   @media screen and (max-width: 480px) {
     font-size: 1.2rem;
   }
-`;
+  `;
 
 export const AboutP = styled.p`
   margin-top: 48px;
@@ -89,15 +89,15 @@ export const AboutP = styled.p`
   font-size: 1.2rem;
   text-align: center;
   max-width: 600px;
-
+  
   @media screen and (max-width: 768px) {
     font-size: 1.2rem;
   }
-
+  
   @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
-`;
+  `;
 
 export const AboutBtnWrapper = styled.div`
   margin-top: 32px;
@@ -105,19 +105,25 @@ export const AboutBtnWrapper = styled.div`
   flex-direction: column;
   text-align: center;
   z-index: 3;
-`;
+  `;
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
-`;
+  `;
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`;
+  `;
 
 export const Span = styled.span`
   color: #15cdfc;
   text-transform: uppercase;
+  `
+
+export const Bold = styled.b`
+font-family: "Major Mono Display", monospace;
+color: #15cdfc;
+text-transform: uppercase;
 `

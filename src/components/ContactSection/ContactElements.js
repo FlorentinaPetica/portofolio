@@ -125,3 +125,27 @@ font-size: 36px;
 text-decoration: none;
 animation: ${slideIn} 2500ms;
 `;
+
+export const Button = styled.a`
+  border-radius: 50px;
+  background: ${({ primary }) => (primary ? "#2eb9db" : "#010606")};
+  background: ${({ secondary }) => (secondary ? "#010606" : "#2eb9db")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "14px 35px" : "12px 25px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ light }) => (light ? "#fff" : "#010606")};
+  font-size: ${({ fontBig }) => (fontBig ? "1.5rem" : "1.2rem")};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: 25px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? "#fff" : "#2eb9db")};
+  }
+`;

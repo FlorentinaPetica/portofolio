@@ -10,6 +10,7 @@ import {
   ArrowForward,
   ArrowRight,
   Span,
+  Bold,
 } from "./AboutElements";
 import { Button } from "../ButtonElements";
 import Video from "../../videos/video.mp4";
@@ -24,10 +25,10 @@ const AboutSection = () => {
       </AboutBg>
       <AboutContent>
         <AboutH1>
-          <Span>F</Span>lorentina <Span>P</Span>etica
+          <Bold>F</Bold>lorentina <Bold>P</Bold>etica
         </AboutH1>
         <AboutP>
-          I am a passionate and structured <Span>web developer.</Span>
+          I am a passionate web developer, who enjoys the structure, logic and creativeness that it combines.
           <br /> Here you can find out about the <Span>skills</Span> I have
           aquired and the <Span>projects</Span> I have been working on.
         </AboutP>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/SidebarMenu";
 import AboutSection from "../components/AboutSection";
-// import ProjectsSection from "../components/ProjectsSection";
+import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -19,7 +19,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <AboutSection />
-      {/* <ProjectsSection /> */}
+      <ProjectsSection />
       <SkillsSection />
       <ContactSection />
       <Footer />
