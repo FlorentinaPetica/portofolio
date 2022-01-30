@@ -43,14 +43,15 @@ export const ProjectsRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
+  margin: 15px 15px;
   padding: 0 15px;
   flex: 1;
   animation: ${({imgEnd}) => (imgEnd ? slideInRight : slideInLeft)};
   animation-duration: 1500ms;
-`;
+  `;
 
 export const Column2 = styled.div`
+  margin: 15px 15px;
   padding: 0 15px;
   flex: 1;
   animation: ${({imgEnd}) => (imgEnd ? slideInLeft : slideInRight)};
@@ -121,7 +122,7 @@ export const WebLink = styled.a`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 450px;
   height: 100%;
 `;
 

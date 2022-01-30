@@ -17,53 +17,51 @@ import {
   ImgWrap,
   Img,
 } from "./ProjectsInfoElements";
-import image from "../../images/meal_share.gif";
+// import image from "../../images/meal_share.gif";
 
 const ProjectsInfo = (props) => {
   const myRef = useRef();
   const { inViewport } = useInViewport(myRef, props);
   const [hover, setHover] = useState(false);
-  const { ...projects } = props;
+  const { ...project } = props;
 
   const onHover = () => {
     setHover(!hover);
   };
 
   return (
-    <ProjectsWrapper bgDark={projects.bgDark} ref={myRef}>
+    <ProjectsWrapper bgDark={project.bgDark} ref={myRef}>
       {inViewport && (
-        <ProjectsRow imgStart={projects.imgStart}>
-          <Column1 imgEnd={projects.imgEnd}>
+        <ProjectsRow imgStart={project.imgStart}>
+          <Column1 imgEnd={project.imgEnd}>
             <TextWrapper>
-              <Heading lightText={projects.lightText}>{projects.title}</Heading>
-              <Subtitle>{projects.subtitle}</Subtitle>
-              <Description darkText={projects.darkText}>
-                {projects.description}
+              <Heading lightText={project.lightText}>{project.title}</Heading>
+              <Subtitle>{project.subtitle}</Subtitle>
+              <Description darkText={project.darkText}>
+                {project.description}
               </Description>
               <SocialIconLink
-                href={projects.gitLink}
+                href={project.gitLink}
                 target='_blank'
                 aria-label='Meal-share repo'
               >
                 <FaGithub />
-                <Span darkText={projects.darkText}>
-                  Go to GitHub repository
-                </Span>
+                <Span darkText={project.darkText}>Go to GitHub repository</Span>
               </SocialIconLink>
               <WebLink
-                href={projects.link}
+                href={project.link}
                 target='_blank'
                 aria-label='Meal'
-                darkText={projects.darkText}
+                darkText={project.darkText}
               >
                 <MdOutlineWeb />
-                <Span darkText={projects.darkText}>Go to app</Span>
+                <Span darkText={project.darkText}>Go to app</Span>
               </WebLink>
             </TextWrapper>
           </Column1>
-          <Column2 imgEnd={projects.imgEnd}>
+          <Column2 imgEnd={project.imgEnd}>
             <ImgWrap onMouseEnter={onHover} onMouseLeave={onHover}>
-              <Img src={image} alt={projects.title} />
+              <Img src={project.image} alt={project.title} />
             </ImgWrap>
           </Column2>
         </ProjectsRow>

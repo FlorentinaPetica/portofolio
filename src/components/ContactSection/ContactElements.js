@@ -34,10 +34,10 @@ export const ContactH1 = styled.h1`
   `;
 
 export const Span = styled.span`
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #010606;
   display: block;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
   padding-left: 5px;
 
 
@@ -92,7 +92,7 @@ justify-content: space-evenly;
 align-items: flex-start;
 border-radius: 10px;
 height: 340px;
-width: 300px;
+width: 360px;
 padding-inline: 30px;
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 transition: all 0.2s ease-in-out;
