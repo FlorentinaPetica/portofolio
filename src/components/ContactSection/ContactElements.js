@@ -27,11 +27,11 @@ export const ContactH1 = styled.h1`
   font-size: 2.5rem;
   color: #010606;
   margin-bottom: 64px;
-  
+
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
-  `;
+`;
 
 export const Span = styled.span`
   font-size: 1rem;
@@ -39,7 +39,6 @@ export const Span = styled.span`
   display: block;
   padding-bottom: 5px;
   padding-left: 5px;
-
 
   @media screen and (max-width: 480px) {
     font-size: 1rem;
@@ -53,17 +52,16 @@ export const ContactWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
-  
+
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
-  `;
+`;
 
 export const ContactCard = styled.div`
   background-size: cover;
@@ -77,57 +75,59 @@ export const ContactCard = styled.div`
   width: 360px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
-  
+
   @media screen and (max-width: 480px) {
     height: 260px;
     width: 280px;
   }
-  `;
+`;
 
 export const SocialMediaWrap = styled.div`
-background: #fff;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: flex-start;
-border-radius: 10px;
-height: 340px;
-width: 360px;
-padding-inline: 30px;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-transition: all 0.2s ease-in-out;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 10px;
+  height: 340px;
+  width: 360px;
+  padding-inline: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
 
-@media screen and (max-width: 480px) {
-  height: 260px;
-  width: 280px;
-}
+  @media screen and (max-width: 480px) {
+    height: 260px;
+    width: 280px;
+  }
 `;
 
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;
-  `;
+`;
 
 export const SocialIcons = styled.div`
-display: flex;
-animation: ${slideIn} 2500ms;
-align-items: center;
+  display: flex;
+  animation: ${slideIn} 2500ms;
+  align-items: center;
 `;
 
 export const SocialIconLink = styled.a`
   color: #15cdfc;
   font-size: 36px;
-  `;
+  text-decoration: none;
+`;
 
 export const ButtonMailTo = styled.a`
-color: #15cdfc;
-font-size: 36px;
-text-decoration: none;
-animation: ${slideIn} 2500ms;
+  color: #15cdfc;
+  font-size: 36px;
+  animation: ${slideIn} 2500ms;
+  text-decoration: none;
 `;
 
 export const Button = styled.a`
   border-radius: 50px;
+  text-decoration: none;
   background: ${({ primary }) => (primary ? "#2eb9db" : "#010606")};
   background: ${({ secondary }) => (secondary ? "#010606" : "#2eb9db")};
   white-space: nowrap;

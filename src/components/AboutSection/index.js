@@ -28,7 +28,7 @@ const AboutSection = () => {
           <Bold>F</Bold>lorentina <Bold>P</Bold>etica
         </AboutH1>
         <AboutP>
-          I am a passionate web developer, who enjoys the structure, logic and creativeness that it combines.
+          I am a passionate web developer, who enjoys the structure, logic and creativity that it combines.
           <br /> Here you can find out about the <Span>skills</Span> I have
           aquired and the <Span>projects</Span> I have been working on.
         </AboutP>

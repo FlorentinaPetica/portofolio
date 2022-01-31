@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-// import { Button } from "../ButtonElements";
 import { useInViewport } from "react-in-viewport";
 import TypeWriter from "typewriter-effect";
 

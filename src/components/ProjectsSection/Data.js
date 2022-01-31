@@ -17,7 +17,7 @@ export const projects = [
     title: "Clicker game",
     subtitle: "HTML, CSS and JavaScript",
     description:
-      "The games challenge it's for two players, who will press more time times the assigned key is the winner.",
+      "The games challenge it's for two players, who will press more times the assigned key is the winner.",
     image: "/assets/images/fast4.png",
     link: "https://florentinapetica.github.io/hyf-homework/Fastpresser/index.html",
     gitLink:
@@ -32,7 +32,7 @@ export const projects = [
     title: "Epic Todo App",
     subtitle: "React Hooks",
     description:
-      "If you have a long list of todos ou can add it here, delete it, update it, and check if it's done!",
+      "If you have a long list of todos you can add it here, delete it, update it, and check if it's done!",
     image: "/assets/images/todo_list_1.png",
     link: "https://gifted-volhard-55038e.netlify.app/",
     gitLink:
@@ -47,9 +47,9 @@ export const projects = [
     title: "Weather app",
     subtitle: "HTML, CSS, JavaScript and APIs",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/images/weather1.png",
-    link: "https://florentinapetica.github.io/hyf-homework/Weather/index.html",
+      "Weather app, find out the temperature in a desired city or by using your location. ",
+    image: "/assets/images/weather.gif",
+    link: "https://keen-brown-6a89a4.netlify.app/",
     gitLink:
       "https://github.com/FlorentinaPetica/hyf-homework/tree/master/javascript/javascript3/week1/Weather",
     imgStart: true,
@@ -59,12 +59,12 @@ export const projects = [
     darkText: false,
   },
   {
-    title: "Clone app",
-    subtitle: "HTML and CSS",
+    title: "Gipgy Searcher",
+    subtitle: "HTML, CSS, JavaScript, APIs",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "/assets/images/cloned_site.gif",
-    link: "https://florentinapetica.github.io/hyf-homework/html-css/week2/index.html",
+      "Search for the perfect Giph and you decide how many you want to display.",
+    image: "/assets/images/giphy_sercher.png",
+    link: "https://brave-northcutt-ebf02b.netlify.app/",
     gitLink:
       "https://github.com/FlorentinaPetica/hyf-homework/tree/master/html-css/week2",
     imgStart: false,
