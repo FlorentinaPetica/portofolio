@@ -3,6 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { useInViewport } from "react-in-viewport";
 import TypeWriter from "typewriter-effect";
+import cv from "../../documents/CV Florentina Petica.pdf"
 
 import {
   ContactContainer,
@@ -91,7 +92,8 @@ const ContactSection = (props) => {
             ""
           )}
           <Button
-            href='https://docs.google.com/presentation/d/1c0yqIS9WHJRKgDBtRoooJ_Gkq-mL_viJoB_xjutZwa8/edit#slide=id.ga632a4d4e1_0_96'
+            href={cv}
+            download
             secondary='true'
             light='true'
             big='false'
@@ -99,7 +101,7 @@ const ContactSection = (props) => {
             aria-label='CV'
             offset={-60}
           >
-            View CV
+            Download CV
           </Button>
         </SocialMediaWrap>
       </ContactWrapper>
