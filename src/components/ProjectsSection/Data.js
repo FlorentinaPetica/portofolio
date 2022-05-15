@@ -66,7 +66,7 @@ export const projects = [
     image: "/assets/images/giphy_sercher.png",
     link: "https://brave-northcutt-ebf02b.netlify.app/",
     gitLink:
-      "https://github.com/FlorentinaPetica/hyf-homework/tree/master/html-css/week2",
+      "https://github.com/FlorentinaPetica/hyf-homework/tree/master/javascript/javascript3/week1/Giphy%20api",
     imgStart: false,
     imgEnd: true,
     bgDark: false,
