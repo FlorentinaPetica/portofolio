@@ -14,6 +14,20 @@ export const projects = [
     darkText: true,
   },
   {
+    title: "The Green Store",
+    subtitle: "React, Node.js, Knex.js, Firebase, Storybook",
+    description:
+      "The customer is a fictional plant shop that needs a webshop app to sell their plants online. This was my class final project. My bigest contribution was the landing page from back-end to front-end.",
+    image: "/assets/images/green-store-1.jpg",
+    link: "https://staging-webshop-class19-fp.herokuapp.com/",
+    gitLink: "https://github.com/HackYourFuture-CPH/fp-class19#about",
+    imgStart: true,
+    imgEnd: false,
+    bgDark: true,
+    lightText: true,
+    darkText: false,
+  },
+  {
     title: "Clicker game",
     subtitle: "HTML, CSS and JavaScript",
     description:
@@ -22,11 +36,11 @@ export const projects = [
     link: "https://florentinapetica.github.io/hyf-homework/Fastpresser/index.html",
     gitLink:
       "https://github.com/FlorentinaPetica/hyf-homework/tree/master/javascript/javascript2/week3/Fastpresser",
-    imgStart: true,
-    imgEnd: false,
-    bgDark: true,
-    lightText: true,
-    darkText: false,
+    imgStart: false,
+    imgEnd: true,
+    bgDark: false,
+    lightText: false,
+    darkText: true,
   },
   {
     title: "Epic Todo App",
@@ -37,11 +51,11 @@ export const projects = [
     link: "https://gifted-volhard-55038e.netlify.app/",
     gitLink:
       "https://github.com/FlorentinaPetica/hyf-homework/tree/master/react/week3/todolist",
-    imgStart: false,
-    imgEnd: true,
-    bgDark: false,
+    imgStart: true,
+    imgEnd: false,
+    bgDark: true,
     lightText: false,
-    darkText: true,
+    darkText: false,
   },
   {
     title: "Weather app",
@@ -52,25 +66,25 @@ export const projects = [
     link: "https://keen-brown-6a89a4.netlify.app/",
     gitLink:
       "https://github.com/FlorentinaPetica/hyf-homework/tree/master/javascript/javascript3/week1/Weather",
-    imgStart: true,
-    imgEnd: false,
-    bgDark: true,
-    lightText: true,
-    darkText: false,
-  },
-  {
-    title: "Gipgy Searcher",
-    subtitle: "HTML, CSS, JavaScript, APIs",
-    description:
-      "Search for the perfect Giph and you decide how many you want to display.",
-    image: "/assets/images/giphy_sercher.png",
-    link: "https://brave-northcutt-ebf02b.netlify.app/",
-    gitLink:
-      "https://github.com/FlorentinaPetica/hyf-homework/tree/master/html-css/week2",
     imgStart: false,
     imgEnd: true,
     bgDark: false,
     lightText: false,
     darkText: true,
   },
+  // {
+  //   title: "Gipgy Searcher",
+  //   subtitle: "HTML, CSS, JavaScript, APIs",
+  //   description:
+  //     "Search for the perfect Giph and you decide how many you want to display.",
+  //   image: "/assets/images/giphy_sercher.png",
+  //   link: "https://brave-northcutt-ebf02b.netlify.app/",
+  //   gitLink:
+  //     "https://github.com/FlorentinaPetica/hyf-homework/tree/master/html-css/week2",
+  //   imgStart: true,
+  //   imgEnd: false,
+  //   bgDark: true,
+  //   lightText: true,
+  //   darkText: false,
+  // },
 ];
