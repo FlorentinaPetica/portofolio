@@ -9,7 +9,7 @@ export const projects = [
     gitLink: "",
     imgStart: true,
     imgEnd: false,
-    bgDark: true,
+    bgDark: true, 
     lightText: true,
     darkText: false,
   },

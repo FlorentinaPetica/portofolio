@@ -1,9 +1,8 @@
 import React, { useState, useRef } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import { useInViewport } from "react-in-viewport";
 import TypeWriter from "typewriter-effect";
-import cv from "../../documents/CV Florentina Petica.pdf"
+import cv from "../../documents/CV Florentina Petica.pdf";
 
 import {
   ContactContainer,
@@ -21,84 +20,76 @@ import {
 const ContactSection = (props) => {
   const [hover, setHover] = useState("");
   const myRef = useRef();
-  const { inViewport } = useInViewport(myRef, props);
 
   return (
-    <ContactContainer id='contact' ref={myRef}>
+    <ContactContainer id="contact" ref={myRef}>
       <ContactH1>
-        {inViewport && (
-          <TypeWriter
-            style={{ fontFamily: "Major Mono Display" }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Get in contact")
-                .pauseFor(1000)
-                .typeString("...")
-                .start();
-            }}
-          />
-        )}
+        <TypeWriter
+          style={{ fontFamily: "Major Mono Display" }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Get in contact")
+              .pauseFor(1000)
+              .typeString("...")
+              .start();
+          }}
+        />
       </ContactH1>
       <ContactWrapper>
         <ContactCard />
         <SocialMediaWrap>
-          {inViewport ? (
-            <>
-              <SocialIcons
-                onMouseEnter={() => setHover("linkedin")}
-                onMouseLeave={() => setHover("")}
+          <>
+            <SocialIcons
+              onMouseEnter={() => setHover("linkedin")}
+              onMouseLeave={() => setHover("")}
+            >
+              <SocialIconLink
+                href="https://www.linkedin.com/in/florentina-petica-161286166/"
+                target="_blank"
+                aria-label="Linkedin"
               >
-                <SocialIconLink
-                  href='https://www.linkedin.com/in/florentina-petica-161286166/'
-                  target='_blank'
-                  aria-label='Linkedin'
-                >
-                  <FaLinkedin />
-                </SocialIconLink>
-                {hover === "linkedin" ? (
-                  <Span>View my Linkedin profile</Span>
-                ) : null}
-              </SocialIcons>
-              <SocialIcons
-                onMouseEnter={() => setHover("github")}
-                onMouseLeave={() => setHover("")}
+                <FaLinkedin />
+              </SocialIconLink>
+              {hover === "linkedin" ? (
+                <Span>View my Linkedin profile</Span>
+              ) : null}
+            </SocialIcons>
+            <SocialIcons
+              onMouseEnter={() => setHover("github")}
+              onMouseLeave={() => setHover("")}
+            >
+              <SocialIconLink
+                href="https://github.com/FlorentinaPetica"
+                target="_blank"
+                aria-label="GitHub"
               >
-                <SocialIconLink
-                  href='https://github.com/FlorentinaPetica'
-                  target='_blank'
-                  aria-label='GitHub'
-                >
-                  <FaGithub />
-                </SocialIconLink>
-                {hover === "github" ? (
-                  <Span>View my Github profile</Span>
-                ) : null}
-              </SocialIcons>
-              <ButtonMailTo
-                href={`mailto:${`florentina.petica@gmail.com`}?subject=${
-                  "" || ""
-                }&body=${"Hej Florentina" || ""}`}
-                aria-label='Email'
-                onMouseEnter={() => setHover("mailto")}
-                onMouseLeave={() => setHover("")}
-              >
-                <FiMail />
-                {hover === "mailto" ? (
-                  <Span>Happy to receive a feedback! </Span>
-                ) : null}
-              </ButtonMailTo>
-            </>
-          ) : (
-            ""
-          )}
+                <FaGithub />
+              </SocialIconLink>
+              {hover === "github" ? <Span>View my Github profile</Span> : null}
+            </SocialIcons>
+            <ButtonMailTo
+              href={`mailto:${`florentina.petica@gmail.com`}?subject=${
+                "" || ""
+              }&body=${"Hej Florentina" || ""}`}
+              aria-label="Email"
+              onMouseEnter={() => setHover("mailto")}
+              onMouseLeave={() => setHover("")}
+            >
+              <FiMail />
+              {hover === "mailto" ? (
+                <Span>Happy to receive a feedback! </Span>
+              ) : null}
+            </ButtonMailTo>
+          </>
+
           <Button
             href={cv}
             download
-            secondary='true'
-            light='true'
-            big='false'
-            target='_blank'
-            aria-label='CV'
+            secondary="true"
+            light="true"
+            big="false"
+            target="_blank"
+            aria-label="CV"
             offset={-60}
           >
             Download CV
