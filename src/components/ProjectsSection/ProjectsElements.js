@@ -9,9 +9,12 @@ export const ProjectsContainer = styled.div`
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
   font-weight: bolder;
-  color: #010606;
+  color: #fff;
+  background-color: #010606;
   padding-top: 50px;
   padding-bottom: 25px;
+  width: 100%;
+  text-align: center;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;

@@ -1,5 +1,19 @@
 export const projects = [
   {
+    title: "Citizens engagement",
+    subtitle: "AngularJS, TypeScript, Bootstrap",
+    description:
+      "This is a responsive web app were I was involved in implementing the frontend according to the agreed design.",
+    image: "/assets/images/ezgif.com-gif-maker.gif",
+    link: "https://ambvosaltres.wesolve.app/account/login",
+    gitLink: "",
+    imgStart: true,
+    imgEnd: false,
+    bgDark: true,
+    lightText: true,
+    darkText: false,
+  },
+  {
     title: "Meal Share App",
     subtitle: "React, Node.js, Knex.js",
     description:

@@ -31,7 +31,7 @@ const ProjectsInfo = (props) => {
 
   return (
     <ProjectsWrapper bgDark={project.bgDark} ref={myRef}>
-      {inViewport && (
+      {/* {inViewport && ( */}
         <ProjectsRow imgStart={project.imgStart}>
           <Column1 imgEnd={project.imgEnd}>
             <TextWrapper>
@@ -45,8 +45,8 @@ const ProjectsInfo = (props) => {
                 target='_blank'
                 aria-label='Meal-share repo'
               >
-                <FaGithub />
-                <Span darkText={project.darkText}>Go to GitHub repository</Span>
+                { project.title !== "Citizens engagement" ? <FaGithub /> : null }
+                <Span darkText={project.darkText}>{ project.title === "Citizens engagement" ? 'Azure project' : 'Go to GitHub repository' }</Span>
               </SocialIconLink>
               <WebLink
                 href={project.link}
@@ -55,7 +55,7 @@ const ProjectsInfo = (props) => {
                 darkText={project.darkText}
               >
                 <MdOutlineWeb />
-                <Span darkText={project.darkText}>Go to app</Span>
+                <Span darkText={project.darkText}>Go to web app</Span>
               </WebLink>
             </TextWrapper>
           </Column1>
@@ -65,7 +65,7 @@ const ProjectsInfo = (props) => {
             </ImgWrap>
           </Column2>
         </ProjectsRow>
-      )}
+      {/* )} */}
     </ProjectsWrapper>
   );
 };

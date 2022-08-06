@@ -1,21 +1,21 @@
 import styled, { keyframes } from "styled-components";
 
 const slideInLeft = keyframes`
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+    // from {
+    //   transform: translateX(-100%);
+    // }
+    // to {
+    //   transform: translateX(0%);
+    // }
 `
 
 const slideInRight = keyframes`
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+    // from {
+    //   transform: translateX(100%);
+    // }
+    // to {
+    //   transform: translateX(0%);
+    // }
 `
 
 export const ProjectsWrapper = styled.div`
@@ -124,10 +124,13 @@ export const WebLink = styled.a`
 export const ImgWrap = styled.div`
   max-width: 450px;
   height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Img = styled.img`
-  width: 95%;
+  max-width: 95%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
