@@ -1,4 +1,4 @@
-import myImage from "../../images/photo1.png";
+import myImage from "../../images/cv_picture.jpg";
 import styled, { keyframes } from "styled-components";
 
 const slideIn = keyframes`
@@ -64,8 +64,10 @@ export const ContactWrapper = styled.div`
 `;
 
 export const ContactCard = styled.div`
-  background-size: cover;
   background-image: url(${myImage});
+  background-position: center;
+  background-repeat: contain;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
