@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import TypeWriter from "typewriter-effect";
-import cv from "../../documents/CV Florentina Petica.pdf";
+import cv from "../../documents/Florentina Petica Prof CV.pdf";
 
 import {
   ContactContainer,
