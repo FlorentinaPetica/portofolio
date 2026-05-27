@@ -49,7 +49,7 @@ const ProjectsInfo = (props) => {
                   : "Go to GitHub repository"}
               </Span>
             </SocialIconLink>
-            <WebLink
+            {/* <WebLink
               href={project.link}
               target="_blank"
               aria-label="Meal"
@@ -57,7 +57,7 @@ const ProjectsInfo = (props) => {
             >
               <MdOutlineWeb />
               <Span darkText={project.darkText}>Go to web app</Span>
-            </WebLink>
+            </WebLink> */}
           </TextWrapper>
         </Column1>
         <Column2 imgEnd={project.imgEnd}>
