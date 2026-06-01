@@ -106,6 +106,8 @@ export const AboutBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
+  max-width: 700px;
   z-index: 3;
   `;
 

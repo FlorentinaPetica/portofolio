@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { FaRedo } from "react-icons/fa";
 
 export const FactCard = styled.div`
+  width: 100%;
   max-width: 800px;
 `;
 
 export const PortfolioQuoteWrapper = styled.div`
-  width: 100%;
+max-width: 800px;
+width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -45,7 +47,9 @@ export const SectionLabel = styled.span`
 
 export const QuoteCard = styled.div`
   position: relative;
-  padding: 60px 48px;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 40px;
   cursor: default;
 `;
 
