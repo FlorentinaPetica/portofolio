@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AboutContainer,
   AboutBg,
@@ -7,17 +7,13 @@ import {
   AboutH1,
   AboutP,
   AboutBtnWrapper,
-  ArrowForward,
-  ArrowRight,
   Span,
   Bold,
 } from "./AboutElements";
-import { Button } from "../ButtonElements";
+import RandomFactsSection from "../RandomFactsSection";
 import Video from "../../videos/video.mp4";
 
 const AboutSection = () => {
-  const [hover, setHover] = useState("");
-
   return (
     <AboutContainer id='about'>
       <AboutBg>
@@ -33,29 +29,8 @@ const AboutSection = () => {
           acquired and the <Span>projects</Span> I have been working on.
         </AboutP>
         <AboutBtnWrapper>
-          <Button
-            to='skills'
-            onMouseEnter={() => setHover("skills")}
-            onMouseLeave={() => setHover("")}
-            primary='true'
-            dark='true'
-            big='false'
-            offset={-60}
-          >
-            My skills {hover === "skills" ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          <RandomFactsSection />
         </AboutBtnWrapper>
-        <Button
-          to='projects'
-          onMouseEnter={() => setHover("projects")}
-          onMouseLeave={() => setHover("")}
-          primary='true'
-          dark='true'
-          big='false'
-          offset={-60}
-        >
-          My projects {hover === "projects" ? <ArrowForward /> : <ArrowRight />}
-        </Button>
       </AboutContent>
     </AboutContainer>
   );

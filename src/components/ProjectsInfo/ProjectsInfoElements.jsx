@@ -35,6 +35,8 @@ export const ProjectsRow = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: ${({ imgStart }) => (imgStart ? "row" : "row-reverse")};
+  width: 100%;
+  max-width: 1200px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

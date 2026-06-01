@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  width: 100%;
   height: 800px;
   position: relative;
   z-index: 1;
@@ -43,9 +44,10 @@ export const VideoBg = styled.video`
 
 export const AboutContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
   position: absolute;
   padding: 50px 24px;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +90,7 @@ export const AboutP = styled.p`
   color: #fff;
   font-size: 1.2rem;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   
   @media screen and (max-width: 768px) {
     font-size: 1.2rem;
