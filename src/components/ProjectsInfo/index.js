@@ -11,11 +11,9 @@ import {
   Description,
   Span,
   SocialIconLink,
-  WebLink,
   ImgWrap,
   Img,
 } from "./ProjectsInfoElements";
-// import image from "../../images/meal_share.gif";
 
 const ProjectsInfo = (props) => {
   const myRef = useRef();
