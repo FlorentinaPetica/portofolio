@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineWeb } from "react-icons/md";
 import {
   ProjectsWrapper,
   ProjectsRow,
